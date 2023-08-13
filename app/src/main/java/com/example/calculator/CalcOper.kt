@@ -1,4 +1,9 @@
-package com.example.calculator.ui.theme
+package com.example.calculator
 
-class CalcOper {
+sealed class CalcOper(val sumbol: String){
+    object Add: CalcOper("+")
+    object Subtract: CalcOper("-")
+    object Multiply: CalcOper("*")
+    object Divide: CalcOper("/")
+
 }
